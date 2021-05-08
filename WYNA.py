@@ -122,13 +122,7 @@ def ask_what_is_your_name(face,img,voice) :
     if(voice) :
         text_to_speech("What is your name")
         last_ask =  time.time()
-    #print("Listening...")
-    #with sr.Microphone() as source:
-    #    speech_recognizer.adjust_for_ambient_noise(source)
-    #    audio = speech_recognizer.listen(source)
-    # recognize speech using Sphinx
-    #print("Processing the voice...")
-    #name = "Unkown"
+   
 
     return 
 
@@ -156,11 +150,8 @@ def callback(recognizer, audio):
                  last_speech = speech.lower().replace("my name is ","").replace("i am ","")
                  print("Name :" + last_speech)
        
-       #text_to_speech(greetings[random.randint(0, 4)] + name )
-       #put_image_text(img,face,name)
-       #print("got the name : "+ name)
+    
     except sr.UnknownValueError:
-        #text_to_speech("Sorry, did not understand")
         print("Sorry, did not understand")
     except sr.RequestError as e:
         text_to_speech("Sorry, I got a problem")
@@ -171,9 +162,7 @@ def callback(recognizer, audio):
     return 
 
 def recorder() :
-#speech_recognizer.energy_threshold = 3800
     while True :
-        #speech_recognizer.energy_threshold =80000
         try :
             speech_recognizer.pause_threshold = 3
             print("Mic Started...")
@@ -201,11 +190,6 @@ while True :
         continue
     
 
-    # if(time.time()- last_mic_reset >15 ) :
-    #    stop_listening(wait_for_stop=False)
-    #    stop_listening = speech_recognizer.listen_in_background(mic, callback)
-    #    print("Mic refreshed...")
-    #    last_mic_reset = time.time()
 
 
     

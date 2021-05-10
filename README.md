@@ -1,6 +1,21 @@
 # WYNA
 WYNA is a tiny robot asking your name and remembers your face and your name on next encounter
 
+![alt text](https://m-shaeri.ir/blog/wp-content/uploads/2021/05/ezgif.com-gif-maker-1.gif)
+
+it needs following packages to be installed :
+
+```shell
+pip install tensorflow == 2.1
+pip install opencv-python
+pip install numpy
+pip install dlib
+pip install scipy
+pip install speech_recognition
+pip install pyttsx3
+pip install threading
+```
+
 ## See More 
 [Read more about WYNA here](https://m-shaeri.ir/blog/wyna-wants-to-know-you/)
 

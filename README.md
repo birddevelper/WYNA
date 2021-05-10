@@ -1,7 +1,7 @@
 # WYNA
 WYNA is a tiny robot asking your name and remembers your face and your name on next encounter
 
-![Kids talking to WYNA](https://m-shaeri.ir/blog/wp-content/uploads/2021/05/ezgif.com-gif-maker-1.gif)
+
 
 it needs following packages to be installed :
 

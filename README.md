@@ -3,7 +3,7 @@ WYNA is a tiny bot asking your name and remembers your face and your name on nex
 
 
 
-it needs following packages to be installed :
+It needs following packages to be installed :
 
 ```shell
 pip install tensorflow == 2.1

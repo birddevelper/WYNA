@@ -1,5 +1,5 @@
 # WYNA
-WYNA is a tiny bot. It asks your name and remembers your face and your name. Next time it sees you, you will be recognised by WYNA.
+WYNA is a tiny bot. It asks your name and remembers your face and your name. Next time it sees you, it recognize you.
 
 It uses Face-net to extract features of people's face, you need to download facenet keras model from [here](https://www.mediafire.com/file/2gtjcz6ig9jsjyn/facenet_keras.h5/file).
 

@@ -204,6 +204,7 @@ while True :
             face_embedding = facenet_model.predict(face_attr.face)
             face_name = face_identifier(face_embedding)
             
+            # If the face is new, try to learn it
             if(face_name == "Unkown") :
                 mark_as_uknown(face_attr, face_embedding ,img)
                 faceRatio = face_attr.get_area_ratio(frame_width,frame_height)

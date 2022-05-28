@@ -27,6 +27,7 @@ stop_listening = None
 
 frame_width = int(cap.get(3))
 frame_height = int(cap.get(4))
+# initialize video recorder
 out = cv2.VideoWriter('outpy.avi',cv2.VideoWriter_fourcc('M','J','P','G'), 10, (frame_width,frame_height))
 last_ask = 0
 last_mic_reset = time.time()
@@ -44,7 +45,7 @@ class faceAttr:
             self.x2 = x2
             self.y1 = y1
             self.y2 = y2
-    
+    # this function calculates the face_area/video_screen_area
     def get_area_ratio(self, imageWidth, imageHeight):
         facearea = ( self.x2- self.x1) * ( self.y2- self.y1)
         imageArea = imageWidth * imageHeight

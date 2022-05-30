@@ -3,7 +3,7 @@ WYNA is a tiny bot. It asks your name and remembers your face and your name. Nex
 
 It uses Face-net to extract features of people's face, you need to download facenet keras model from [here](https://www.mediafire.com/file/2gtjcz6ig9jsjyn/facenet_keras.h5/file).
 
-It needs following packages to be installed :
+Following packages needs to be installed :
 
 ```shell
 pip install tensorflow == 2.1

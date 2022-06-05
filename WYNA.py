@@ -8,6 +8,8 @@ import speech_recognition as sr
 import pyttsx3 as tts
 import random
 import time
+
+#we need thread to prevent video freezing during image processing
 import threading
 
 text_to_speech_engine = tts.init()

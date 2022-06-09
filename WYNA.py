@@ -63,8 +63,8 @@ def put_speech_history_on_image(img):
         cv2.putText(img, str(speech_text), (5, height), cv2.FONT_HERSHEY_SIMPLEX, 0.4, (10,30,255), 1)
         height-=15
 
-
-
+#
+# put text on image
 def put_image_text(img, face, text, upper = True , color = (0,0,255)) :
     cv2.rectangle(img, (face.x1, face.y1), (face.x2, face.y2),color, 2)
     if(upper) :

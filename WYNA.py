@@ -27,6 +27,7 @@ speech_history=[]
 
 stop_listening = None
 
+#width & height of video frame
 frame_width = int(cap.get(3))
 frame_height = int(cap.get(4))
 # initialize video recorder

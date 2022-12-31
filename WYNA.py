@@ -9,7 +9,7 @@ import pyttsx3 as tts
 import random
 import time
 
-#we need thread to prevent video freezing during image processing
+# We use thread to prevent video freezing during image processing
 import threading
 
 text_to_speech_engine = tts.init()
@@ -161,8 +161,6 @@ def callback(recognizer, audio):
         text_to_speech("Sorry, I got a problem")
         print("Sorry, I got a problem")
     
-   
-
     return 
 
 def recorder() :
@@ -186,17 +184,14 @@ x.start()
 
 while True :
     
-
+    # continues reading from camera
     _ , img = cap.read()
 
     if img is None :
         print("Capture Problem")
         continue
     
-
-
-
-    
+    # apply the face extraction on the captured image
     faces = extract_face_and_preprocessing(img)   
     if( len(faces) > 0 ) :
         
@@ -208,7 +203,7 @@ while True :
             face_embedding = facenet_model.predict(face_attr.face)
             face_name = face_identifier(face_embedding)
             
-            # If the face is new, try to learn it
+            # If the face is new, try to learn it, otherwise display person's nameon screen
             if(face_name == "Unkown") :
                 mark_as_uknown(face_attr, face_embedding ,img)
                 faceRatio = face_attr.get_area_ratio(frame_width,frame_height)

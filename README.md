@@ -21,4 +21,4 @@ pip install threading
 
 [Read more about FaceNet here](https://mshaeri.com/blog/how-facenet-works-how-to-work-with-facenet/)
 
-![WYNA](https://m-shaeri.ir/blog/wp-content/uploads/2021/05/Robot_with_FaceNet3-825x510.jpg)
+![WYNA](https://mshaeri.com/blog/wp-content/uploads/2021/05/Robot_with_FaceNet3-825x510.jpg)
